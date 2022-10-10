@@ -44,7 +44,7 @@ public class UserDetailsValidation {
         }
     }
     public static void isValidPassword(String password) {
-        String regex = "^[0-9 a-z A-Z]{8,}$";
+        String regex = "^[0-9 a-z A-Z @]{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
         if (matcher.matches()) {
