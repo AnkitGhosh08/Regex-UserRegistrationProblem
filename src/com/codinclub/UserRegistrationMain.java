@@ -9,6 +9,8 @@ public class UserRegistrationMain extends UserDetailsValidation {
     static String email;
     static String mobileNumber;
     static String password;
+    static String AllMail;
+
 
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration Problem");
@@ -18,6 +20,7 @@ public class UserRegistrationMain extends UserDetailsValidation {
         userEmail();
         userMobileNumber();
         userPassword();
+        userAllMail();
 
     }
     public static void userFirstName() {
@@ -47,6 +50,11 @@ public class UserRegistrationMain extends UserDetailsValidation {
         System.out.println("Enter your password");
         password = scanner.nextLine();
         UserDetailsValidation.isValidPassword(password);
+    }
+    public static void userAllMail(){
+        System.out.println("Enter your AllMail");
+        AllMail = scanner.nextLine();
+        UserDetailsValidation.isValidPassword(AllMail);
     }
 }
 
