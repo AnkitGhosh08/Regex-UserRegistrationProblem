@@ -8,13 +8,17 @@ public class UserRegistrationMain extends UserDetailsValidation {
     static String lastName;
     static String email;
     static String mobileNumber;
+    static String password;
 
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration Problem");
+        //calling method.
         userFirstName();
         userLastName();
         userEmail();
         userMobileNumber();
+        userPassword();
+
     }
     public static void userFirstName() {
         System.out.println("Enter your First Name");
@@ -38,5 +42,10 @@ public class UserRegistrationMain extends UserDetailsValidation {
         System.out.println("Enter your Mobile number ");
         mobileNumber = scanner.nextLine();
         UserDetailsValidation.isValidMobileNumber(mobileNumber);
+    }
+    public static void userPassword(){
+        System.out.println("Enter your password");
+        password = scanner.nextLine();
+        UserDetailsValidation.isValidPassword(password);
     }
 }
