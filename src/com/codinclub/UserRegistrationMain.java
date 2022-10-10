@@ -49,3 +49,4 @@ public class UserRegistrationMain extends UserDetailsValidation {
         UserDetailsValidation.isValidPassword(password);
     }
 }
+
